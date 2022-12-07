@@ -2,6 +2,7 @@
   Calculadora de lucros.
 </h1>
 Um projeto que calcula o lucro que você teve retirando a porcentagem de 5% e 15% das vendas.
+Foi utilizado LocalStorage para armazenar preços antigos utilizados pelos usuários.
 
 ### Tecnologias
 

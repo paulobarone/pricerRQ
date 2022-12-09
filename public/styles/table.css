@@ -1,0 +1,24 @@
+th, td {
+  border: 1px solid #E8C4C4;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.tableContainer {
+  display: none;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.th-img {
+  border: none;
+}
+
+.td-img {
+  width: 36px;
+  height: 36px;
+}
+
+.td-ignore {
+  border: none;
+}

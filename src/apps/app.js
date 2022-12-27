@@ -155,7 +155,7 @@ const result = document.querySelector('.result');
 calculateButton.addEventListener('click', () => {
   clearTable()
   let priceArr = []
-  
+
   allInputsQuantity.forEach(inputQuantity => {
     let priceInputValue = inputQuantity.parentElement.querySelector('.price-item').value;
     let itemName = inputQuantity.parentElement.querySelector('.data-name').textContent
@@ -218,9 +218,11 @@ function trTable(itemName, quantity, preco, img) {
 }
 
 function clearTable() {
-  table.querySelectorAll('.data-tr').forEach(e => {
+  table.querySelectorAll('tr').forEach(e => {
     e.remove()
   })
+
+  arrPrecoTotal = []
 }
 
 checkBoxPrice.addEventListener('change', (e) => {
@@ -255,7 +257,7 @@ function calcPrecoTotal() {
     <td class="td-ignore"></td>
     <td class="td-ignore"></td>
     <td class="total">${formatedValue(arrPrecoTotalSomado)}</td>
-    <td class="totalLucro5">${formatedValue(arrPrecoTotalSomado, 15)}</td>
-    <td class="totalLucro15">${formatedValue(arrPrecoTotalSomado, 5)}</td>
+    <td class="totalLucro15">${formatedValue(arrPrecoTotalSomado, 15)}</td>
+    <td class="totalLucro5">${formatedValue(arrPrecoTotalSomado, 5)}</td>
   `
 }
